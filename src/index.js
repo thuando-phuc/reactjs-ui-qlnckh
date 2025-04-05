@@ -4,8 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 // PAGES
 import Login from './pages/login';
-import Admin from './pages/admin/admin';
-import Lecturer from './pages/lecturer/lecturer';
+import AdminHome from './pages/admin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +13,9 @@ root.render(
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Login />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/lecture" element={<Lecturer />} />
+        {/* Admin */}
+        <Route path="/admin/" element={<AdminHome />} />
+      
       </Routes>
     </Router>
   </div>
