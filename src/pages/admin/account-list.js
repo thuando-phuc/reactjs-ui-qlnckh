@@ -11,7 +11,6 @@ import Header from "../../components/sections/Header";
 class AdminAccountList extends React.Component {
     constructor(props){
         super(props);
-        this.deleteAccount = this.deleteAccount.bind(this);
     }
 
     render() {
