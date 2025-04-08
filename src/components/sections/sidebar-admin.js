@@ -63,7 +63,7 @@ class SidebarAdmin extends React.Component {
             <li className="nav-item">
                 <a
                 className="nav-link collapsed"
-                href="/admin/accountlist"
+                href="/admin/manage-topic"
                 >
                 <i class="fa-solid fa-file"></i>
                 <span> Quản Lý Đề Tài</span>
