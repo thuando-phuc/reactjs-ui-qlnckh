@@ -43,6 +43,9 @@ class Login extends React.Component {
                                                     <h1 className="h4 text-gray-900 mb-lg-5 mt-lg-5" style={{fontWeight: 'bolder'}}>
                                                         Đăng Nhập
                                                     </h1>
+                                                    {/* <h1 className="text-3xl font-bold underline">
+                                                        Hello world!
+                                                    </h1>                                                     */}
                                                 </div>
                                                 <form className="user" onSubmit={this.handleSubmit}>
                                                     <div className="form-group">
