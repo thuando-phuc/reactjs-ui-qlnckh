@@ -1,4 +1,5 @@
 import React from "react";
+import { Avatar, AvatarGroup, HStack  } from "@chakra-ui/react"
 
 class Header extends React.Component {
     render() {
@@ -84,6 +85,7 @@ class Header extends React.Component {
                     alt=''
                     />
                 </a>
+
                 <div
                     className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                     aria-labelledby="userDropdown"

@@ -7,11 +7,13 @@ import Login from './pages/login';
 import AdminHome from './pages/admin';
 import AdminAccountlist from './pages/admin/account-list';
 import AdminManageTopic from './pages/admin/manage-topic';
+import { Provider } from './components/ui/provider';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
+    <Provider>
     <Router basename=''>
       <Routes>
         <Route path="/login" element={<Login />} />
@@ -22,5 +24,6 @@ root.render(
         <Route path="/admin/manage-topic" element={<AdminManageTopic />} />
       </Routes>
     </Router>
+    </Provider>
   </div>
 )

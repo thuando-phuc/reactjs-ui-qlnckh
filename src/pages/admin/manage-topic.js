@@ -2,10 +2,12 @@ import React from "react";
 import SidebarAdmin from "../../components/sections/sidebar-admin";
 import SearchBar from "../../components/sections/searchbar";
 import Footer from "../../components/sections/footer";
-import AddAccountModal from "../../components/modals/add-account-modal";
 import LogoutModal from "../../components/modals/logout-modal";
 import AccountlistItem from "../../components/widgets/accountlist-item";
 import Header from "../../components/sections/Header";
+import AddTopicModal from "../../components/modals/add-topic-modal";
+
+import { Button, HStack } from "@chakra-ui/react"
 
 class AdminManageTopic extends React.Component{
     render() {
@@ -27,12 +29,13 @@ class AdminManageTopic extends React.Component{
                                         type="button"
                                         className="btn btn-primary btn-icon-split"
                                         data-toggle="modal"
-                                        data-target="#addAccountModal"
+                                        data-target="#addTopicModal" // Modal ID
                                     >
                                         <span className="icon text-white-50">
                                             <i className="fas fa-plus"></i>
                                         </span>
                                         <span className="text">Thêm Đề Tài</span>
+                            
                                     </button>
                                 </div>
                                 <div className="card-body">
@@ -59,7 +62,7 @@ class AdminManageTopic extends React.Component{
                             </div>
                         </div>
                     </div>
-                    <AddAccountModal />
+                    <AddTopicModal />
                 </div>
                 <Footer />
                 </div>
