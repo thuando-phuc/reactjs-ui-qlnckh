@@ -26,7 +26,6 @@ class SidebarAdmin extends React.Component {
                 aria-expanded="true"
                 aria-controls="collapseTwo"
                 >
-        
                 <i class="fa-solid fa-circle-user"></i>
                 <span> Cá Nhân</span>
                 </a>
@@ -41,6 +40,15 @@ class SidebarAdmin extends React.Component {
                     <a className="collapse-item" href="/admin/info">Thông tin cá nhân</a>
                 </div>
                 </div>
+            </li>
+            <li className="nav-item">
+                <a
+                className="nav-link collapsed"
+                href="/admin#"
+                >
+                <i class="fa-solid fa-gauge"></i>
+                <span>Dashboard</span>
+                </a>
             </li>
             <li className="nav-item">
                 <a
